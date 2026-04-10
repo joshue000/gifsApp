@@ -1,10 +1,5 @@
-export interface Gif {
-  id: string;
-  title: string;
-  url: string;
-  weight: number;
-  height: number;
-}
+import type { Gif } from "../gifs/interfaces/gif.interface";
+
 
 export const mockGifs: Gif[] = [
   {
@@ -16,15 +11,15 @@ export const mockGifs: Gif[] = [
   },
   {
     id: '2',
-    title: 'Dancing Dog',
-    url: 'https://media.giphy.com/media/3o7TKsQkq1Z4d0985W/giphy.gif',
+    title: 'Finish Him Mortal Kombat GIF',
+    url: 'https://media1.giphy.com/media/v1.Y2lkPWUyNTI0M2Jib3FxaTQwdDF2N2syeW56ZXFuMWMwYzZjaXNicmppcDhibmlmb3p4NiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/CatCCFZa6U8nK/giphy.gif',
     weight: 600,
     height: 400,
   },
   {
     id: '3',
-    title: 'Excited Baby',
-    url: 'https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif',
+    title: 'Spongebob Squarepants Worlds Smallest Violin GIF',
+    url: 'https://media1.giphy.com/media/v1.Y2lkPWUyNTI0M2JiZG9zdXE0OW9wNDAxZXE5M3ptcXdkbTF2bTl3ZzY2dHplc25lNWpjYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13A7YlLvYVDnmU/giphy.gif',
     weight: 700,
     height: 500,
   },
