@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-const useCounter = () => {
+const useCounter = (initialValue = 0) => {
 
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(initialValue);
 
   const handleAdd = () => {
     setCounter(counter + 1)
@@ -16,7 +16,7 @@ const useCounter = () => {
   };
 
   const handleReset = () => {
-    setCounter(0);
+    setCounter(initialValue);
   };
 
   return {
