@@ -1,0 +1,93 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GifsApp component > should render the GifsApp component 1`] = `
+<div>
+  <div
+    class="content-center"
+  >
+    <h1>
+      Gif Searcher
+    </h1>
+    <p>
+      Discover and share the perfect gif
+    </p>
+  </div>
+  <div
+    class="search-container"
+  >
+    <input
+      placeholder="Search for gifs..."
+      type="text"
+      value=""
+    />
+    <button>
+      Search
+    </button>
+  </div>
+  <div
+    class="previous-searches"
+  >
+    <h2>
+      Previous Searches
+    </h2>
+    <ul
+      class="previous-searches-list"
+    />
+  </div>
+  <div
+    class="gifs-container"
+  >
+    <div
+      class="gif-item"
+    >
+      <img
+        alt="Funny Cat"
+        src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+      />
+      <h3>
+        Funny Cat
+      </h3>
+      <p>
+        500
+         x 
+        300
+         (1.5MB)
+      </p>
+    </div>
+    <div
+      class="gif-item"
+    >
+      <img
+        alt="Finish Him Mortal Kombat GIF"
+        src="https://media1.giphy.com/media/v1.Y2lkPWUyNTI0M2Jib3FxaTQwdDF2N2syeW56ZXFuMWMwYzZjaXNicmppcDhibmlmb3p4NiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/CatCCFZa6U8nK/giphy.gif"
+      />
+      <h3>
+        Finish Him Mortal Kombat GIF
+      </h3>
+      <p>
+        600
+         x 
+        400
+         (1.5MB)
+      </p>
+    </div>
+    <div
+      class="gif-item"
+    >
+      <img
+        alt="Spongebob Squarepants Worlds Smallest Violin GIF"
+        src="https://media1.giphy.com/media/v1.Y2lkPWUyNTI0M2JiZG9zdXE0OW9wNDAxZXE5M3ptcXdkbTF2bTl3ZzY2dHplc25lNWpjYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13A7YlLvYVDnmU/giphy.gif"
+      />
+      <h3>
+        Spongebob Squarepants Worlds Smallest Violin GIF
+      </h3>
+      <p>
+        700
+         x 
+        500
+         (1.5MB)
+      </p>
+    </div>
+  </div>
+</div>
+`;
