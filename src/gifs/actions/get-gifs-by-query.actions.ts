@@ -5,19 +5,26 @@ import type { GiphyResponse } from "../interfaces/giphy.response";
 
 
 export const getGifsByQuery = async (query: string): Promise<Gif[]> => {
-  const response = await giphyApi<GiphyResponse>('/search', {
-      params: {
-        q: query,
-        limit: 10,
-      }
-    }
-  );
 
-  return response.data.data.map(gif => ({
-    id: gif.id,
-    title: gif.title,
-    url: gif.images.original.url,
-    weight: Number(gif.images.original.width),
-    height: Number(gif.images.original.height),
-  }));
+  if (query.trim() === '') return [];
+  try {
+    const response = await giphyApi<GiphyResponse>('/search', {
+        params: {
+          q: query,
+          limit: 10,
+        }
+      }
+    );
+  
+    return response.data.data.map(gif => ({
+      id: gif.id,
+      title: gif.title,
+      url: gif.images.original.url,
+      weight: Number(gif.images.original.width),
+      height: Number(gif.images.original.height),
+    }));
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
 } 
